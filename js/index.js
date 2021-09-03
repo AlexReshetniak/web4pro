@@ -6,7 +6,7 @@ var scroll_position = 0
 
 window.addEventListener('scroll', function (e) {
 	scroll_position = window.scrollY
-	if (scroll_position > header.scrollHeight) {
+	if (scroll_position > header.scrollHeight - 20) {
 		header.classList.add("header_sticky")
 	}
 	else {
@@ -68,6 +68,6 @@ const swiper = new Swiper('.swiper', {
 		clickable: true,
 		dynamicBullets: true,
 	},
-	slidesPerView: 2,
+	slidesPerView: 1,
 	centereSlides: true,
 });
